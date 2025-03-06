@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.hero {
+    background-color: #e0f7fa; /* Light blue background */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue heading */
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.search {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.search h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search p {
+    margin-bottom: 30px;
+}
+
+#resume-upload {
+    display: inline-block;
+}
+
+#resume {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .search {
+        padding: 60px 0;
+    }
+}
