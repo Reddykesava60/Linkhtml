@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBMATCH - Find Your Perfect Career</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='your-logo.png') }}" alt="JOBMATCH Logo" class="logo">
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Unlock Your Career Potential with JOBMATCH</h1>
+            <p>Discover personalized job recommendations tailored to your skills and experience. Upload your resume and let us connect you with your ideal opportunities.</p>
+            <a href="#search-section" class="btn">Get Started</a>
+        </div>
+    </section>
+    <section id="search-section" class="search">
+        <div class="container">
+            <h2>Find Your Dream Job Today</h2>
+            <p>Upload your resume to instantly see matching job opportunities. Our advanced matching algorithm analyzes your skills and experience to provide you with the most relevant positions.</p>
+            <form id="resume-upload" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                <label for="resume" class="upload-label">Upload Your Resume</label>
+                <button type="submit" class="btn">Search Jobs</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JOBMATCH. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
